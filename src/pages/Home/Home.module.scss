@@ -1,0 +1,9 @@
+@use '../../styles/variables.scss' as var;
+.content{
+    @include var.pageDisposition;
+    &__body{
+        @media(max-width: var.$breakpoint){
+            gap:22px;
+        }
+    }
+}
