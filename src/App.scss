@@ -1,0 +1,9 @@
+@use 'styles/variables.scss' as var;
+
+.app{
+    min-width: var.$min-width;
+    max-width: var.$max-width;
+    margin:0;
+    padding:0;
+
+}

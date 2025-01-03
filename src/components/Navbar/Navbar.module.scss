@@ -1,0 +1,17 @@
+@use '../../styles/variables.scss' as var;
+.navbar{
+    display: flex;
+    gap: 57px;
+    font-size: 24px;
+    @media(max-width: 480px){
+        font-size: 12px;
+        gap:26px;
+    }
+    &__link{
+        color:var.$third-color;
+        text-decoration: none;
+        &--underline{
+            text-decoration: underline;
+        }
+    }
+}

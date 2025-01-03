@@ -1,18 +1,16 @@
-import Header from './components/Header'
 import Footer from './components/Footer'
 import { BrowserRouter as Router } from 'react-router-dom'
 import AppRouter from './components/AppRouter'
+import './App.scss'
 
 function App() {
   return (
-    <>
+    <div className='app'>
       <Router>
-      <Header/>
-        <h1>App</h1>
         <AppRouter/>
       </Router>
       <Footer/>
-    </>
+    </div>
   )
 }
 export default App
