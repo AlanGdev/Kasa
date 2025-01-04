@@ -3,15 +3,15 @@ import Logo from '../Logo'
 import picture from '../../assets/logoRed.png'
 import Navbar from '../Navbar'
 import PropTypes from 'prop-types'
-function Header({active}){
+function Header(){
     return(
     <header className={styles.header}>
         <Logo picture={picture}/>
-        <Navbar active={active}/>
+        <Navbar/>
     </header>
     )
 }
-Header.PropTypes={
+Header.propTypes={
     active:PropTypes.string,
 }
 export default Header

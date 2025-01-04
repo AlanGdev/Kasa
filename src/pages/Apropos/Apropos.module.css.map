@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../styles/variables.scss","Apropos.module.scss"],"names":[],"mappings":"AAaA;ACZA;EDqCI;EACA;EACA;EACA,kBAlCa;;AAmCb;ECzCJ;ID0CQ;IACA;IACA;IACA;IACA","file":"Apropos.module.css"}
+{"version":3,"sourceRoot":"","sources":["../../styles/variables.scss","Apropos.module.scss"],"names":[],"mappings":"AAaA;ACZA;EDmCI;EACA;EACA,kBA/Ba;;AAgCb;ECtCJ;IDuCQ;IACA","file":"Apropos.module.css"}

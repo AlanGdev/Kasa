@@ -6,7 +6,7 @@ function Logo({picture}){
         <img className={styles.logo} src={picture}/>
     )
 }
-Logo.PropTypes={
+Logo.propTypes={
     picture:PropTypes.string,
 }
 export default Logo

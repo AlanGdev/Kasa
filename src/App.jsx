@@ -1,12 +1,12 @@
 import Footer from './components/Footer'
 import { BrowserRouter as Router } from 'react-router-dom'
 import AppRouter from './components/AppRouter'
-import './App.scss'
+import styles from'./App.module.scss'
 
 function App() {
   return (
-    <div className='app'>
-      <Router>
+    <div className={styles.app}>
+      <Router >
         <AppRouter/>
       </Router>
       <Footer/>

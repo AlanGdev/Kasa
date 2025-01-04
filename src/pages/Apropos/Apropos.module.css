@@ -1,17 +1,13 @@
 /* Pages Disposition */
 .content {
-  padding-top: 40px;
+  margin: 40px 100px 38px;
   gap: 38px;
-  margin-bottom: 38px;
   background-color: rgb(255, 255, 255);
 }
 @media (max-width: 768px) {
   .content {
-    padding-top: 20px;
-    padding-right: 19px;
-    padding-left: 19px;
+    margin: 20px 19px 19px 19px;
     gap: 19px;
-    margin-bottom: 19px;
   }
 }
 

@@ -2,8 +2,8 @@ $max-width:1240px;
 $min-width:335px;
 $breakpoint:768px;
 
-$margin-leftDesktop:100px;
-$margin-leftMobile:20px;
+$margin-Desktop:100px;
+$margin-Mobile:20px;
 $primary-color:rgba(255,96,96,1);
 $secondary-color:rgba(255,255,255,1);
 $third-color:rgba(0,0,0,1);
@@ -14,38 +14,44 @@ $font:Montserrat;
 /* Pages Disposition */
 
 @mixin pageDisposition{
+    margin:0px 100px 50px;
     padding-top: 45px;
     gap:50px;
-    margin-bottom: 50px;
     background-color:$secondary-color;
     @media(max-width: $breakpoint){
         padding-top: 20px;
-        gap:27px;
+        margin:0px 19px;
         margin-bottom: 27px;
+        gap:27px;
     }
 }
 @mixin pageError{
+    margin:0px 100px 139px;
     padding-top: 40px;
     gap:139px;
-    margin-bottom: 139px;
     background-color:$secondary-color;
     @media(max-width: $breakpoint){
+        margin: 0 19px;
         padding-top: 20px;
         gap:113px;
         margin-bottom: 113px;;
     }
 }
 @mixin pageApropos{
+    margin:0 100px 38px;
     padding-top: 40px;
     gap:38px;
-    margin-bottom: 38px;
     background-color:$secondary-color;
     @media(max-width: $breakpoint){
-        padding-top: 20px;
-        padding-right: 19px;
-        padding-left: 19px;
+        margin: 0;
+        padding: 20px 19px 19px 19px;
         gap:19px;
-        margin-bottom: 19px;
     }
+}
+/* Center*/
+@mixin center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
