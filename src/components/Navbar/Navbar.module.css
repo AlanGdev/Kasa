@@ -1,10 +1,11 @@
 /* Pages Disposition */
 /* Center*/
+/* linear Gradient */
 .navbar {
   display: flex;
   gap: 57px;
 }
-@media (max-width: 768px) {
+@media (max-width: 930px) {
   .navbar {
     gap: 26px;
   }
@@ -16,7 +17,7 @@
   font-weight: 500;
   text-align: right;
 }
-@media (max-width: 768px) {
+@media (max-width: 930px) {
   .navbar__link {
     font-size: 12px;
   }

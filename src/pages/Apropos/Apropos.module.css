@@ -1,5 +1,6 @@
 /* Pages Disposition */
 /* Center*/
+/* linear Gradient */
 .content {
   display: flex;
   flex-direction: column;
@@ -8,7 +9,7 @@
   gap: 38px;
   background-color: rgb(255, 255, 255);
 }
-@media (max-width: 768px) {
+@media (max-width: 930px) {
   .content {
     margin: 0;
     padding: 20px 19px 19px 19px;

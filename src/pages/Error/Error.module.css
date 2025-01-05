@@ -1,5 +1,6 @@
 /* Pages Disposition */
 /* Center*/
+/* linear Gradient */
 .page {
   display: flex;
   flex-direction: column;
@@ -11,7 +12,7 @@
   flex-direction: column;
   gap: 139px;
 }
-@media (max-width: 768px) {
+@media (max-width: 930px) {
   .page {
     margin: 0 19px;
     padding-top: 20px;
@@ -19,7 +20,7 @@
     margin-bottom: 113px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 930px) {
   .page {
     gap: 113px;
   }
@@ -33,7 +34,7 @@
   text-align: center;
   color: rgb(255, 96, 96);
 }
-@media (max-width: 768px) {
+@media (max-width: 930px) {
   .page__title {
     font-size: 96px;
   }
@@ -46,7 +47,7 @@
   text-align: center;
   color: rgb(255, 96, 96);
 }
-@media (max-width: 768px) {
+@media (max-width: 930px) {
   .page__subtitle {
     font-size: 18px;
   }
@@ -59,7 +60,7 @@
   text-align: center;
   color: rgb(0, 0, 0);
 }
-@media (max-width: 768px) {
+@media (max-width: 930px) {
   .page__link {
     font-size: 14px;
   }

@@ -6,4 +6,13 @@
             gap:22px;
         }
     }
+    &__body{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap:40px;
+        @media(max-width: var.$breakpoint){
+            gap:22px;
+        }
+    }
 }
