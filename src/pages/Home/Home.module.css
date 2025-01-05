@@ -1,18 +1,23 @@
 /* Pages Disposition */
-.content {
-  margin: 45px 100px 50px;
+/* Center*/
+.page {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 100px 50px;
+  padding-top: 45px;
   gap: 50px;
   background-color: rgb(255, 255, 255);
 }
 @media (max-width: 768px) {
-  .content {
-    margin: 20px 19px;
+  .page {
+    padding-top: 20px;
+    margin: 0px 19px;
     margin-bottom: 27px;
     gap: 27px;
   }
 }
 @media (max-width: 768px) {
-  .content__body {
+  .page__body {
     gap: 22px;
   }
 }

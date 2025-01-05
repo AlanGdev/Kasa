@@ -11,9 +11,24 @@ $background-color:rgba(246,246,246,1);
 $weight-medium:500;
 $font:Montserrat;
 
+@mixin textShadow{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0,0.25);
+}
+@mixin textShadowReset{
+    text-shadow: none;
+}
+@mixin boxShadow{
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+@mixin borderRadMobile{
+    border-radius:10px;
+}
+
 /* Pages Disposition */
 
 @mixin pageDisposition{
+    display: flex;
+    flex-direction: column;
     margin:0px 100px 50px;
     padding-top: 45px;
     gap:50px;
@@ -26,6 +41,8 @@ $font:Montserrat;
     }
 }
 @mixin pageError{
+    display: flex;
+    flex-direction: column;
     margin:0px 100px 139px;
     padding-top: 40px;
     gap:139px;
@@ -38,6 +55,8 @@ $font:Montserrat;
     }
 }
 @mixin pageApropos{
+    display: flex;
+    flex-direction: column;
     margin:0 100px 38px;
     padding-top: 40px;
     gap:38px;

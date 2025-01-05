@@ -1,5 +1,5 @@
 @use '../../styles/variables.scss' as var;
-.content{
+.page{
     @include var.pageDisposition;
     &__body{
         @media(max-width: var.$breakpoint){
