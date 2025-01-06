@@ -5,7 +5,7 @@
   display: flex;
   gap: 57px;
 }
-@media (max-width: 930px) {
+@media (max-width: 955px) {
   .navbar {
     gap: 26px;
   }
@@ -17,7 +17,7 @@
   font-weight: 500;
   text-align: right;
 }
-@media (max-width: 930px) {
+@media (max-width: 955px) {
   .navbar__link {
     font-size: 12px;
   }

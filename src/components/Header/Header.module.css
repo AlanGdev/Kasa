@@ -3,6 +3,7 @@
   min-width: 335px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 /*# sourceMappingURL=Header.module.css.map */

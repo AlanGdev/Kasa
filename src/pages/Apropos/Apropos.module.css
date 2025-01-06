@@ -8,13 +8,23 @@
   padding-top: 40px;
   gap: 38px;
   background-color: rgb(255, 255, 255);
+  margin-bottom: 0;
 }
-@media (max-width: 930px) {
+@media (max-width: 955px) {
   .content {
     margin: 0;
     padding: 20px 19px 19px 19px;
     gap: 19px;
   }
+}
+.content__itemList {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+}
+.content__itemList__item {
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=Apropos.module.css.map */

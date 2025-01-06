@@ -5,14 +5,19 @@
   box-sizing: border-box;
   list-style: none;
   margin: 0;
-  padding: 0px;
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   border-radius: 25px;
   background-color: rgb(246, 246, 246);
 }
-@media (max-width: 930px) {
+@media (max-width: 1279px) {
+  .gallery {
+    gap: 20px;
+  }
+}
+@media (max-width: 955px) {
   .gallery {
     padding: 0;
     row-gap: 20px;
@@ -23,17 +28,17 @@
   box-sizing: border-box;
   width: 33.3333333333%;
   aspect-ratio: 1/1;
-  min-width: 340px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
   .gallery__item {
-    width: 50%;
+    width: calc(50% - 10px);
+    height: 340px;
   }
 }
-@media (max-width: 930px) {
+@media (max-width: 955px) {
   .gallery__item {
     width: 100%;
     height: 255px;

@@ -1,15 +1,19 @@
 @use '../../styles/variables.scss' as var;
 
 @mixin collapse-params{
+    box-sizing: border-box;
+    //flex: 1;
     margin: 0;
     padding: 0;
     max-width:1024px;
     border-radius:5px;
     position:relative;
     overflow:hidden;
+    height: auto;
 }
 @mixin top-bar-params{
     position:absolute;
+    //flex: 1;
     z-index: 1;
     box-sizing: border-box;
     width:100%;
@@ -39,6 +43,9 @@
 
 }
 @mixin frame-params{
+    //position: absolute;
+    //flex: 1;
+    overflow: hidden;
     z-index: 0;
     margin:0;
     border-radius: 10px 10px 5px 5px;
@@ -46,6 +53,9 @@
     background-color: var.$background-color;
     font-weight: 400;
     color:var.$third-color;
+    transform:translateY(-100%);
+    transition: all 0.3s ease-out;
+    height:0px;
 }
 @mixin content-params{
     margin:0;
@@ -89,6 +99,7 @@
         &--open{
             transform:translateY(0);
             height:auto;
+            margin-bottom: 38px;
         }
     }
     .collapse-medium{
