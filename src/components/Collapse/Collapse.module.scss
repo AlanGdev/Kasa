@@ -1,0 +1,123 @@
+@use '../../styles/variables.scss' as var;
+
+@mixin collapse-params{
+    margin: 0;
+    padding: 0;
+    max-width:1024px;
+    border-radius:5px;
+    position:relative;
+    overflow:hidden;
+}
+@mixin top-bar-params{
+    position:absolute;
+    z-index: 1;
+    box-sizing: border-box;
+    width:100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:var.$secondary-color;
+    font-weight: 700;
+    background-color: var.$primary-color;
+    border-radius: 5px;
+}
+@mixin top-bar__button-params{
+    border:none;
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:32px;
+    height:32px;
+    background-color: var.$primary-color;
+    color:var.$secondary-color;
+    font-size: 24px;
+    transform: rotate(180deg);
+    transition: all 0.3s ease-out
+
+}
+@mixin frame-params{
+    z-index: 0;
+    margin:0;
+    border-radius: 10px 10px 5px 5px;
+    padding:70px 20px 20px 20px;
+    background-color: var.$background-color;
+    font-weight: 400;
+    color:var.$third-color;
+}
+@mixin content-params{
+    margin:0;
+    padding:0;
+}
+.collapse{
+    @include collapse-params;
+    &__top-bar{
+        @include top-bar-params;
+        padding:10px 15px 10px 15px;
+        font-size: 24px;
+        @media(max-width:var.$breakpoint){
+            padding:10px 10px 10px 10px;
+            font-size: 13px;
+        }
+        &__title{
+            margin:0;
+        }
+        &__button{
+            @include top-bar__button-params();
+            @media(max-width:var.$breakpoint){
+                font-size: 16px;
+            }
+            &--open{
+                transform:rotate(0deg)
+            }
+        }
+    }
+    &__frame{
+        @include frame-params;
+        font-size: 18px;
+        @media(max-width:var.$breakpoint){
+            font-size: 12px;
+        }
+        &__content{
+            @include content-params;
+            &--open{
+                transform:translateY(0);
+            }
+        }
+        &--open{
+            transform:translateY(0);
+            height:auto;
+        }
+    }
+    .collapse-medium{
+        @include collapse-params;
+        &__top-bar{
+            @include top-bar-params;
+            padding:10px 20px 10px 10px;
+            font-size: 18px;
+            @media(max-width:var.$breakpoint){
+                padding:10px 10px 10px 10px;
+                font-size: 13px;
+            }
+            &__title{
+                margin:0;
+            }
+            &__button{
+                @include top-bar__button-params();
+            }
+        }
+        &__frame{
+            @include frame-params;
+            font-size: 18px;
+            @media(max-width:var.$breakpoint){
+                font-size: 12px;
+            }
+            &__content{
+                @include content-params;
+            }
+        }
+    }
+}
+
