@@ -11,8 +11,6 @@
     height: auto;
 }
 @mixin top-bar-params{
-    position:absolute;
-    z-index: 1;
     box-sizing: border-box;
     width:100%;
     margin: 0;
@@ -36,110 +34,78 @@
     background-color: rgba(0,0,0,0);
     color:var.$secondary-color;
     font-size: 24px;
-    transform: rotate(180deg);
+    transform: rotate(0 deg);
     transition: all 0.3s ease-out
 
 }
 @mixin frame-params{
+    box-sizing: border-box;
     overflow: hidden;
     z-index: 0;
     margin:0;
     border-radius: 10px 10px 5px 5px;
-    padding:70px 20px 20px 20px;
+    padding:0px 20px;
     background-color: var.$background-color;
     font-weight: 400;
     color:var.$third-color;
-    transform:translateY(-100%);
-    transition: all 0.3s ease-out;
     height:0px;
+    transition:all 0.3s ease-out;
+
 }
 @mixin content-params{
     margin:0;
     padding:0;
     list-style: none;
 }
-.collapse{
-    @include collapse-params;
-    &__top-bar{
-        @include top-bar-params;
-        padding:10px 15px 10px 15px;
-        font-size: 24px;
-        @media(max-width:var.$breakpoint){
-            padding:10px 10px 10px 10px;
-            font-size: 13px;
-            height: 30px !important;
-        }
-        &__title{
-            margin:0;
-        }
-        &__button{
-            @include top-bar__button-params();
-            @media(max-width:var.$breakpoint){
-                font-size: 16px;
-            }
-            &--open{
-                transform:rotate(0deg)
-            }
+
+.top-bar{
+    @include top-bar-params();
+    &__title{
+        margin:0;
+    }
+    &__button{
+        @include top-bar__button-params();
+        &--open{
+            transform:rotate(-180deg)
         }
     }
-    &__frame{
-        @include frame-params;
-        font-size: 18px;
-        @media(max-width:var.$breakpoint){
-            font-size: 12px;
-        }
-        &__content{
-            @include content-params;
-            &--open{
-                transform:translateY(0);
-            }
-        }
+    @media(max-width:var.$breakpoint){
+        padding:10px 10px 10px 10px;
+        font-size: 13px;
+        height: 30px !important;
+    }
+}
+.frame{
+    @include frame-params();
+    &--open{
+        height:100%;
+        padding:20px 20px 20px 20px;
+    }
+    &__content{
+        @include content-params();
+        transform-origin: 50% 0;
+        transform:translateY(-100%);
+        transition:all 0.3s ease-out;
         &--open{
             transform:translateY(0);
-            height:auto;
-            margin-bottom: 38px;
-        }
-    }
-    &-medium{
-        @include collapse-params;
-        &__top-bar{
-            @include top-bar-params;
-            padding:10px 20px 10px 10px;
-            font-size: 18px;
-            @media(max-width:var.$breakpoint){
-                padding:10px 10px 10px 10px;
-                font-size: 13px;
-                height: 30px !important;
 
-            }
-            &__title{
-                margin:0;
-            }
-            &__button{
-                @include top-bar__button-params();
-                &--open{
-                    transform:rotate(0deg)
-                }
-            }
-        }
-        &__frame{
-            @include frame-params;
-            font-size: 18px;
-            @media(max-width:var.$breakpoint){
-                font-size: 12px;
-            }
-            &__content{
-                @include content-params;
-                &--open{
-                    transform:translateY(0);
-                }
-            }
-            &--open{
-                transform:translateY(0);
-                height:auto;
-                margin-bottom: 38px;
-            }
         }
     }
 }
-
+.collapse{
+    @include collapse-params;
+}
+.collapse > .top-bar{
+    padding:10px 15px 10px 15px;
+    font-size: 24px;
+}
+.collapse-medium{
+    @include collapse-params;
+}
+.collapse-medium > .top-bar{
+    padding:10px 20px 10px 10px;
+    font-size: 18px;
+}
+.collapse-medium > .frame{
+    font-size: 18px;
+}

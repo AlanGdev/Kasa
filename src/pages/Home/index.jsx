@@ -7,7 +7,7 @@ function Home(){
         <div className={styles.page}>
             <Header/>
             <div className={styles.page__body}>
-                <Banner/>
+                <Banner text="Chez vous, partout et ailleurs"/>
                 <Gallery/>
             </div>
         </div>

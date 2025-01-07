@@ -1,14 +1,14 @@
 @use '../../styles/variables.scss' as var;
 .content{
     @include var.pageApropos;
-    margin-bottom: 0;
+    margin-bottom: 38px;
     &__itemList{
         margin:auto;
         padding:0;
         list-style: none;
-        //display:flex;
-        //flex-direction: column;
-        //gap:38px;
+        display:flex;
+        flex-direction: column;
+        gap:38px;
         &__item{
             margin:0;
             padding:0;

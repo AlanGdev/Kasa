@@ -16,7 +16,7 @@ function Banner({text}){
         <div className={styles.banner}>
             <img className={`${styles.banner__picture} `} src={picture} alt="banner picture" />
             <div className={`${styles.banner__background} ${styles[opacityClassname]}`}></div>
-            <p className={styles.banner__text}>Chez vous, partout et ailleurs</p>
+            <p className={styles.banner__text}>{text}</p>
         </div>
 
     )
