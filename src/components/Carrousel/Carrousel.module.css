@@ -13,13 +13,15 @@
     margin-bottom: 15px;
   }
 }
-.carrousel .carrousel__background {
+
+.carrousel__background {
   width: 100%;
   height: 100%;
   border-radius: 25px;
   object-fit: cover;
 }
-.carrousel .carrousel__arrowBack, .carrousel .carrousel__arrowForward {
+
+.carrousel__arrowBack, .carrousel__arrowForward {
   width: 96px;
   height: 119.64px;
   background-color: rgba(0, 0, 0, 0);
@@ -27,19 +29,29 @@
   color: rgb(255, 255, 255);
   font-size: 79.2px;
 }
-.carrousel .carrousel__arrowBack {
+@media (max-width: 955px) {
+  .carrousel__arrowBack, .carrousel__arrowForward {
+    width: 24px;
+    height: 24px;
+    font-size: 19.8px;
+  }
+}
+
+.carrousel__arrowBack {
   position: absolute;
   left: 0;
   top: 50%;
   transform: translate(0, -50%);
 }
-.carrousel .carrousel__arrowForward {
+
+.carrousel__arrowForward {
   position: absolute;
   right: 0;
   top: 50%;
   transform: translate(0, -50%);
 }
-.carrousel .carrousel__counter {
+
+.carrousel__counter {
   margin: 0px;
   position: absolute;
   bottom: 25px;
@@ -48,6 +60,11 @@
   font-size: 18px;
   font-weight: 500;
   color: rgb(255, 255, 255);
+}
+@media (max-width: 955px) {
+  .carrousel__counter {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=Carrousel.module.css.map */
