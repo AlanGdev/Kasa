@@ -8,7 +8,6 @@ function Collapse({title,content,size}){
     const[isOpen,setIsOpen]=useState(false)
     const collapseSize=size==='large'?'collapse':'collapse-medium'
     const option=isOpen?'--open':''
-    console.log(option)
     return(
         <div className={styles[collapseSize]}>
             <div className={styles[`${collapseSize}__top-bar`]}>

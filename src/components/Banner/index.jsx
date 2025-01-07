@@ -11,9 +11,7 @@ function Banner({text}){
     page==='/Apropos' ?
     'banner__background--opacity30':
     ''
-    console.log('location:'+ page)
     const picture=page==='/' ? homePicture : aProposPicture
-    console.log(picture)
     return(
         <div className={styles.banner}>
             <img className={`${styles.banner__picture} `} src={picture} alt="banner picture" />

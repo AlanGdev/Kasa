@@ -2,7 +2,6 @@ import styles from './Gallery.module.scss'
 import logements from '../../logements.json'
 import Card from '../Card'
 function Gallery(){
-    console.log(logements)
     return(
         <ul className={styles.gallery}>
             {logements.map((logement)=>

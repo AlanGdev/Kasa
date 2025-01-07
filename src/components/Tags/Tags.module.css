@@ -1,0 +1,36 @@
+/* Pages Disposition */
+/* Center*/
+/* linear Gradient */
+.tags {
+  display: flex;
+  padding: 0;
+  gap: 10px;
+  margin: 20px 0 0;
+}
+@media (max-width: 955px) {
+  .tags {
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+}
+.tags__tag {
+  box-sizing: border-box;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 22px;
+  border-radius: 10px;
+  background-color: rgb(255, 96, 96);
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 700;
+}
+@media (max-width: 955px) {
+  .tags__tag {
+    font-size: 10px;
+    height: 18px;
+  }
+}
+
+/*# sourceMappingURL=Tags.module.css.map */
