@@ -21,6 +21,23 @@
     font-weight: 700;
     background-color: var.$primary-color;
     border-radius: 5px;
+    &__title{
+        margin:0;
+        @media(max-width:var.$breakpoint){
+            font-size: 13px;
+        }
+    }
+    &__button{
+        @include top-bar__button-params();
+        &--open{
+            transform:rotate(-180deg)
+        }
+    }
+    @media(max-width:var.$breakpoint){
+        padding:10px 10px 10px 10px;
+        height: 30px !important;
+    }
+
 }
 @mixin top-bar__button-params{
     border:none;
@@ -50,33 +67,6 @@
     color:var.$third-color;
     height:0px;
     transition:all 0.3s ease-out;
-
-}
-@mixin content-params{
-    margin:0;
-    padding:0;
-    list-style: none;
-}
-
-.top-bar{
-    @include top-bar-params();
-    &__title{
-        margin:0;
-    }
-    &__button{
-        @include top-bar__button-params();
-        &--open{
-            transform:rotate(-180deg)
-        }
-    }
-    @media(max-width:var.$breakpoint){
-        padding:10px 10px 10px 10px;
-        font-size: 13px;
-        height: 30px !important;
-    }
-}
-.frame{
-    @include frame-params();
     &--open{
         height:100%;
         padding:20px 20px 20px 20px;
@@ -88,24 +78,38 @@
         transition:all 0.3s ease-out;
         &--open{
             transform:translateY(0);
-
         }
+        @media(max-width:var.$breakpoint){
+            font-size: 12px;
+        }
+    
     }
+}
+@mixin content-params{
+    margin:0;
+    padding:0;
+    list-style: none;
+    font-size: 18px;
+}
+.top-bar{
+    @include top-bar-params();
+}
+.frame{
+    @include frame-params();
 }
 .collapse{
     @include collapse-params;
-}
-.collapse > .top-bar{
+
+    & .top-bar{
     padding:10px 15px 10px 15px;
     font-size: 24px;
 }
-.collapse-medium{
-    @include collapse-params;
-}
-.collapse-medium > .top-bar{
-    padding:10px 20px 10px 10px;
-    font-size: 18px;
-}
-.collapse-medium > .frame{
-    font-size: 18px;
+
+    &-medium{
+        @include collapse-params;
+        & .top-bar{
+            padding:10px 20px 10px 10px;
+            font-size: 18px;
+        }
+    }
 }

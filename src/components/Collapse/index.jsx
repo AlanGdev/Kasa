@@ -2,6 +2,7 @@ import styles from'./Collapse.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'; 
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 function Collapse({title,content,size}){
     const[isOpen,setIsOpen]=useState(false)
@@ -21,11 +22,17 @@ function Collapse({title,content,size}){
                 </ul>:
                 <p className={`${styles[`frame__content`]} ${isOpen?styles[`frame__content${option}`]:''}`}>{content}</p>}
             </div>
-            
-
-
         </div>
     )
-
 }
+
+Collapse.propTypes={
+    title:PropTypes.string,
+    content:PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.array
+    ]),
+    size:PropTypes.string
+}
+
 export default Collapse

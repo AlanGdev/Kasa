@@ -16,6 +16,11 @@
 .top-bar__title {
   margin: 0;
 }
+@media (max-width: 955px) {
+  .top-bar__title {
+    font-size: 13px;
+  }
+}
 .top-bar__button {
   border: none;
   margin: 0;
@@ -37,7 +42,6 @@
 @media (max-width: 955px) {
   .top-bar {
     padding: 10px 10px 10px 10px;
-    font-size: 13px;
     height: 30px !important;
   }
 }
@@ -63,12 +67,18 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: 18px;
   transform-origin: 50% 0;
   transform: translateY(-100%);
   transition: all 0.3s ease-out;
 }
 .frame__content--open {
   transform: translateY(0);
+}
+@media (max-width: 955px) {
+  .frame__content {
+    font-size: 12px;
+  }
 }
 
 .collapse {
@@ -81,12 +91,10 @@
   overflow: hidden;
   height: auto;
 }
-
-.collapse > .top-bar {
+.collapse .top-bar {
   padding: 10px 15px 10px 15px;
   font-size: 24px;
 }
-
 .collapse-medium {
   box-sizing: border-box;
   margin: 0;
@@ -97,13 +105,8 @@
   overflow: hidden;
   height: auto;
 }
-
-.collapse-medium > .top-bar {
+.collapse-medium .top-bar {
   padding: 10px 20px 10px 10px;
-  font-size: 18px;
-}
-
-.collapse-medium > .frame {
   font-size: 18px;
 }
 
