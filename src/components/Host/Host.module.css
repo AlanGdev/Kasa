@@ -14,7 +14,7 @@
   font-size: 18px;
   margin: 0;
 }
-@media (max-width: 955px) {
+@media (max-width: 768px) {
   .host__name {
     font-size: 12px;
     width: 135.5px;
@@ -26,7 +26,7 @@
   border-radius: 50%;
   object-fit: cover;
 }
-@media (max-width: 955px) {
+@media (max-width: 768px) {
   .host__picture {
     width: 32px;
     height: 32px;

@@ -12,7 +12,7 @@
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 955px) {
+@media (max-width: 768px) {
   .description {
     flex-direction: column;
   }
@@ -29,14 +29,14 @@
   justify-content: space-between;
   align-items: flex-end;
 }
-@media (max-width: 955px) {
+@media (max-width: 768px) {
   .hostRating {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
   }
 }
-@media (max-width: 955px) {
+@media (max-width: 768px) {
   .hostRating__host {
     flex: 1;
   }
@@ -48,7 +48,7 @@
   gap: 76px;
   margin-top: 25px;
 }
-@media (max-width: 955px) {
+@media (max-width: 768px) {
   .details {
     margin-top: 13px;
     grid-template-columns: 1fr;

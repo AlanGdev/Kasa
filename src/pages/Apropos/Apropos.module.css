@@ -10,7 +10,12 @@
   background-color: rgb(255, 255, 255);
   margin-bottom: 38px;
 }
-@media (max-width: 955px) {
+@media (max-width: 1285px) {
+  .content {
+    margin: 0px 40px 50px;
+  }
+}
+@media (max-width: 768px) {
   .content {
     margin: 0;
     padding: 20px 19px 19px 19px;

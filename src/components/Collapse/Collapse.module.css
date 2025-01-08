@@ -16,7 +16,7 @@
 .top-bar__title {
   margin: 0;
 }
-@media (max-width: 955px) {
+@media (max-width: 768px) {
   .top-bar__title {
     font-size: 13px;
   }
@@ -39,7 +39,7 @@
 .top-bar__button--open {
   transform: rotate(-180deg);
 }
-@media (max-width: 955px) {
+@media (max-width: 768px) {
   .top-bar {
     padding: 10px 10px 10px 10px;
     height: 30px !important;
@@ -75,7 +75,7 @@
 .frame__content--open {
   transform: translateY(0);
 }
-@media (max-width: 955px) {
+@media (max-width: 768px) {
   .frame__content {
     font-size: 12px;
   }

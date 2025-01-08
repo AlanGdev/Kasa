@@ -7,7 +7,7 @@
   position: relative;
   margin-bottom: 30px;
 }
-@media (max-width: 955px) {
+@media (max-width: 768px) {
   .carrousel {
     height: 255px;
     margin-bottom: 15px;
@@ -29,7 +29,7 @@
   color: rgb(255, 255, 255);
   font-size: 79.2px;
 }
-@media (max-width: 955px) {
+@media (max-width: 768px) {
   .carrousel__arrowBack, .carrousel__arrowForward {
     width: 24px;
     height: 24px;
@@ -61,7 +61,7 @@
   font-weight: 500;
   color: rgb(255, 255, 255);
 }
-@media (max-width: 955px) {
+@media (max-width: 768px) {
   .carrousel__counter {
     display: none;
   }

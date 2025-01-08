@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
 }
-@media (max-width: 955px) {
+@media (max-width: 768px) {
   .titleLoge__title {
     font-size: 18px;
   }
@@ -24,7 +24,7 @@
   padding: 2px 0;
   font-weight: 500;
 }
-@media (max-width: 955px) {
+@media (max-width: 768px) {
   .titleLoge__location {
     font-size: 14px;
   }

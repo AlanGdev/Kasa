@@ -32,7 +32,7 @@
   line-height: 34.22px;
   color: rgb(255, 255, 255);
 }
-@media (max-width: 955px) {
+@media (max-width: 768px) {
   .footer__text {
     top: 105px;
     width: 133.59px;

@@ -9,7 +9,12 @@
   gap: 50px;
   background-color: rgb(255, 255, 255);
 }
-@media (max-width: 955px) {
+@media (max-width: 1285px) {
+  .content {
+    margin: 0px 40px 50px;
+  }
+}
+@media (max-width: 768px) {
   .content {
     padding-top: 20px;
     margin: 0px 19px;
