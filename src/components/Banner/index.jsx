@@ -16,7 +16,7 @@ function Banner({ text }) {
             : page === routeApropos.path
               ? 'banner__background--opacity30'
               : ''
-    const picture = page === '/' ? homePicture : aProposPicture
+    const picture = page === routeHome.path ? homePicture : aProposPicture
     return (
         <div className={styles.banner}>
             <img
