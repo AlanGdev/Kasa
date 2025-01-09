@@ -1,6 +1,5 @@
 @use '../../styles/variables.scss' as var;
 
-.content{
+.content {
     @include var.pageDisposition;
-  
 }

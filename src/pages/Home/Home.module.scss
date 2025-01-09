@@ -1,18 +1,18 @@
 @use '../../styles/variables.scss' as var;
-.page{
+.page {
     @include var.pageDisposition;
-    &__body{
-        @media(max-width: var.$breakpoint){
-            gap:22px;
+    &__body {
+        @media (max-width: var.$breakpoint) {
+            gap: 22px;
         }
     }
-    &__body{
-        display:flex;
+    &__body {
+        display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap:40px;
-        @media(max-width: var.$breakpoint){
-            gap:22px;
+        gap: 40px;
+        @media (max-width: var.$breakpoint) {
+            gap: 22px;
         }
     }
 }

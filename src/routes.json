@@ -1,19 +1,18 @@
 [
     {
-        "path":"/",
-        "element":"Home"
-        },
-    {
-    "path":"/apropos",
-    "element":"Apropos"
+        "path": "/",
+        "element": "Home"
     },
     {
-        "path":"/logement/:id",
-        "element":"Logement"
+        "path": "/apropos",
+        "element": "Apropos"
     },
     {
-        "path":"*",
-        "element":"Error"
+        "path": "/logement/:id",
+        "element": "Logement"
+    },
+    {
+        "path": "*",
+        "element": "Error"
     }
-                            
 ]
