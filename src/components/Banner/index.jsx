@@ -3,12 +3,16 @@ import PropTypes from 'prop-types'
 import { useLocation } from 'react-router-dom'
 import homePicture from '../../assets/homePicture.png'
 import aProposPicture from '../../assets/aProposPicture.png'
+import routes from '../../routes.json'
 
 function Banner({text}){
+    const routeHome=routes.find((route)=>route.element==='Home')
+    const routeApropos=routes.find((route)=>route.element==='Apropos')
     const page=useLocation().pathname
-    const opacityClassname=page==='/'?
+
+    const opacityClassname=page===routeHome.path?
     'banner__background--opacity60':
-    page==='/Apropos' ?
+    page===routeApropos.path ?
     'banner__background--opacity30':
     ''
     const picture=page==='/' ? homePicture : aProposPicture
