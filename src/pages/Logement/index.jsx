@@ -6,9 +6,7 @@ import Loge from '../../components/Loge'
 
 function Logement(){
     const {id}=useParams()
-    console.log(id)
     const logement=logements.find((item)=>item.id===id)
-    console.log(logements.id)
     if(!logement){
         return(<Navigate to='/error'/>)
     }

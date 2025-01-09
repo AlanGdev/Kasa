@@ -30,6 +30,6 @@ function Loge({logement}){
 
 }
 Loge.propTypes={
-    logement:PropTypes.array
+    logement:PropTypes.object
 }
 export default Loge
