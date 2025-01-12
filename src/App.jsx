@@ -6,10 +6,10 @@ import styles from './App.module.scss'
 function App() {
     return (
         <div className={styles.app}>
-            <Router>
+            <Router className={styles.app__content}>
                 <AppRouter />
             </Router>
-            <Footer />
+            <Footer className={styles.app__footer} />
         </div>
     )
 }
