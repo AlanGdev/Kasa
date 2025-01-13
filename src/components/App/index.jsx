@@ -1,6 +1,6 @@
-import Footer from './components/Footer'
+import Footer from '../Footer'
 import { BrowserRouter as Router } from 'react-router-dom'
-import AppRouter from './components/AppRouter'
+import AppRouter from '../AppRouter'
 import styles from './App.module.scss'
 
 function App() {
